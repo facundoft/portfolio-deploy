@@ -4,9 +4,8 @@
   <meta charset="utf-8">
   <title>Redirecting...</title>
   <script>
-    const path = window.location.pathname;
-    const redirectPath = path.startsWith('/portfolio-deploy/') ? path : '/portfolio-deploy' + path;
-    window.location.replace('/portfolio-deploy' + (path === '/404.html' ? '' : path));
+    sessionStorage.redirect = window.location.href;
+    window.location.replace('/portfolio-deploy/');
   </script>
 </head>
 <body>

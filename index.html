@@ -7,10 +7,12 @@
     <title>Portfolio FT</title>
     <script>
       (function() {
-        const redirect = sessionStorage.redirect;
+        var redirect = sessionStorage.redirect;
         delete sessionStorage.redirect;
-        if (redirect && redirect !== location.href) {
-          history.replaceState(null, null, redirect);
+        if (redirect && redirect != window.location.href) {
+          var segments = redirect.split('/');
+          var path = segments.slice(3).join('/');  // Ignora los primeros 3 segmentos (protocolo, dominio, portfolio-deploy)
+          if (path) window.history.replaceState(null, null, '/' + path);
         }
       })();
     </script>
