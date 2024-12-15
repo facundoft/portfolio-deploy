@@ -5,6 +5,15 @@
     <link rel="shortcut icon" type="image/x-icon" href="/portfolio-deploy/assets/favicon.ico-C1tvNzQ0.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio FT</title>
+    <script>
+      (function() {
+        const redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
     <script type="module" crossorigin src="/portfolio-deploy/assets/index-Igrbs90t.js"></script>
     <link rel="stylesheet" crossorigin href="/portfolio-deploy/assets/index-CaqNOYSP.css">
   </head>
