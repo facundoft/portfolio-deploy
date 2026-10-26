@@ -1,10 +1,42 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <link rel="shortcut icon" type="image/x-icon" href="/portfolio-deploy/assets/favicon.ico-C1tvNzQ0.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio FT</title>
+    <title>Facundo Techera – Full Stack Developer</title>
+    <meta name="description" content="Portfolio de Facundo Techera, desarrollador full stack (Angular, .NET y SQL Server) con experiencia en el sector logístico. Experiencia, tecnologías y proyectos." />
+    <meta name="author" content="Facundo Techera" />
+    <meta name="theme-color" content="#130935" />
+
+    <!-- Al compartir el link (LinkedIn, WhatsApp, etc.) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Facundo Techera – Full Stack Developer" />
+    <meta property="og:description" content="Desarrollador full stack (Angular, .NET y SQL Server). Experiencia, tecnologías y proyectos." />
+    <meta property="og:url" content="https://facundoft.github.io/portfolio-deploy/" />
+    <meta property="og:image" content="https://facundoft.github.io/portfolio-deploy/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Fuentes e iconos (acá y no con @import en el CSS, para no bloquear el render) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <script>
+      (function() {
+        try {
+          var t = localStorage.getItem('theme');
+          document.documentElement.dataset.theme = t === 'light' ? 'light' : 'dark';
+          var l = localStorage.getItem('lang');
+          if (l === 'en' || l === 'es') document.documentElement.lang = l;
+        } catch (e) {
+          document.documentElement.dataset.theme = 'dark';
+        }
+      })();
+    </script>
     <script>
       (function() {
         var redirect = sessionStorage.redirect;
@@ -16,10 +48,10 @@
         }
       })();
     </script>
-    <script type="module" crossorigin src="/portfolio-deploy/assets/index-DFIY5Pst.js"></script>
-    <link rel="stylesheet" crossorigin href="/portfolio-deploy/assets/index-CaqNOYSP.css">
+    <script type="module" crossorigin src="/portfolio-deploy/assets/index-BIHRG1r3.js"></script>
+    <link rel="stylesheet" crossorigin href="/portfolio-deploy/assets/index-DjOljljk.css">
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root"></div>
   </body>
 </html>
